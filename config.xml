@@ -52,9 +52,7 @@
 
     <plugin name="cordova-plugin-whitelist"           source="npm" spec="~1.2.1" />
 	
-	        <config-file target="AndroidManifest.xml" parent="/manifest">
-            <uses-permission android:name="android.permission.INTERNET" />
-        </config-file>
+
 
 	
 	
