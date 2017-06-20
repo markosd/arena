@@ -20,7 +20,7 @@
     <preference name="DisallowOverscroll"         value="false" />
     <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
 <preference name="android-minSdkVersion" value="17"/>
-   <preference name="android-targetSdkVersion" value="25" />
+   <preference name="android-targetSdkVersion" value="26" />
     
     <!-- Define a specific version of PhoneGap to build into your app. -->
     <!-- <preference name="phonegap-version"       value="cli-6.0.0" /> -->
@@ -28,7 +28,7 @@
     <preference name="permissions" value="none"/>
 <preference name="orientation" value="default"/>
 <preference name="target-device" value="universal"/>
-<preference name="fullscreen" value="true"/>
+<preference name="fullscreen" value="false"/>
 <preference name="webviewbounce" value="true"/>
 <preference name="prerendered-icon" value="true"/>
 <preference name="stay-in-webview" value="false"/>
