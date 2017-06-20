@@ -1,17 +1,56 @@
-<html ng-app="Arena">
-<head>
-</head>
-<body ng-controller="myCtrl">
-   
-    <p ng-click="myFunction()"> <button>Arena</button></p>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  
+  </head>
+  <body>
+    <div id="siteloader" style='width:100%;height:100%;padding:0px;' ></div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js?n=1"></script>
 <script>
-    var app = angular.module('myApp',[]);
-    app.controller('myCtrl',function($window,$scope){
-        $scope.myFunction = function(){
-        $window.location.href = 'http://www.mojemaslo.com/arena/'; //You should have http here.
-        }
-    });
+var angularTodo = angular.module('lostsysApp', []);    
+
+
+        angularTodo.controller('mainController', function($scope, $http) {
+            $scope.names = [];
+
+            $http.get('http://www.mojemaslo.com/arena/')
+                .success(function(data) {
+                    $scope.names = eval(data);
+                    console.log(data)
+                })
+                .error(function(data) {
+                    alert(data);
+                    console.log('Error: ' + data);
+                });
+
+            $scope.addNom = function() {
+                $http.post('http://www.mojemaslo.com/arena/', { op: 'append', nom: $scope.nom, telefon: $scope.telefon } )
+                    .success(function(data) {
+                        $scope.names = eval(data);
+                        console.log(data)
+                    })
+                    .error(function(data) {
+                        console.log('Error: ' + data);
+                    });
+
+                $scope.nom="";
+                $scope.telefon="";
+            }
+
+            $scope.delNom = function( nom ) {
+                if ( confirm("Seguro?") ) {
+                    $http.post('http://www.mojemaslo.com/arena/', { op: 'delete', nom: nom } )
+                        .success(function(data) {
+                            $scope.names = eval(data);
+                            console.log(data)
+                        })
+                        .error(function(data) {
+                            console.log('Error: ' + data);
+                        });
+                }
+            }
+        });
 </script>
-</body>
+  </body>
 </html>
