@@ -19,7 +19,7 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="DisallowOverscroll"         value="false" />
     <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
-<preference name="android-minSdkVersion" value="20"/>
+<preference name="android-minSdkVersion" value="17"/>
    <preference name="android-targetSdkVersion" value="25" />
     
     <!-- Define a specific version of PhoneGap to build into your app. -->
