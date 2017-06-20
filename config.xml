@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget id="org.coenraets.ionicdirectory" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0">
@@ -33,7 +33,7 @@
 <preference name="target-device" value="universal"/>
 <preference name="fullscreen" value="false"/>
 <preference name="webviewbounce" value="true"/>
-<preference name="prerendered-icon" value="true"/>
+
 <preference name="stay-in-webview" value="false"/>
 
 <preference name="detect-data-types" value="true"/>
@@ -50,15 +50,13 @@
 <preference name="disable-push-notifications" value="1" />
 
 <!-- Android -->
-<preference name="SplashScreenDelay" value="1000" />
+
 <!-- iOS Splash screen-->
 
-<preference name="show-splash-screen-spinner" value="false" />
-<preference name="FadeSplashScreenDuration" value="1000" />
-<preference name="FadeSplashScreen" value="true" />
+
 
 <!-- Splash screen Plugin --> 
-<plugin name="cordova-plugin-splashscreen" />
+
 
     <!-- Plugins -->
     <!-- Core plugins -->
