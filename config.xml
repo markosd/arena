@@ -22,8 +22,8 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="DisallowOverscroll"         value="false" />
     <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
-    <preference name="android-minSdkVersion"      value="14" />
-
+    <preference name="android-minSdkVersion"      value="26" />
+    
     <!-- Define a specific version of PhoneGap to build into your app. -->
     <!-- <preference name="phonegap-version"       value="cli-6.0.0" /> -->
 	
@@ -59,6 +59,7 @@
         <splash src="www/res/screen/wp8/screen-portrait.jpg" platform="wp8" width="768" height="1280" />
     </platform>
 
+	
     <platform name="windows">
         <!-- For Windows the recommended approach to define app icons is to use target attribute -->
         <!-- <icon src="www/res/icon/windows/StoreLogo.png"         target="StoreLogo" /> -->
