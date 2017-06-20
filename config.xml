@@ -15,7 +15,7 @@
 
     <!-- Define the main entry-point to the application -->
     <content src="index.html" />
-<manifest package="org.qtproject.arena.notification" xmlns:android="http://schemas.android.com/apk/res/android" android:versionName="1.0" android:versionCode="1" android:installLocation="auto">
+<manifest>
    
     <uses-permission android:name="android.permission.INTERNET"/>
 
@@ -36,7 +36,7 @@
 <preference name="orientation" value="default"/>
 <preference name="target-device" value="universal"/>
 <preference name="fullscreen" value="false"/>
-<preference name="webviewbounce" value="false"/>
+<preference name="webviewbounce" value="true"/>
 <preference name="prerendered-icon" value="true"/>
 <preference name="stay-in-webview" value="false"/>
 
@@ -57,7 +57,7 @@
 <preference name="SplashScreenDelay" value="1000" />
 <!-- iOS Splash screen-->
 
-<preference name="show-splash-screen-spinner" value="true" />
+<preference name="show-splash-screen-spinner" value="false" />
 <preference name="FadeSplashScreenDuration" value="1000" />
 <preference name="FadeSplashScreen" value="true" />
 
