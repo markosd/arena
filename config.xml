@@ -49,9 +49,9 @@
 <!-- To avoid the Apple Notifications warning -->
 <preference name="disable-push-notifications" value="1" />
 
-        <config-file parent="/*">
-           <uses-permission android:name="android.permission.INTERNET" />
-        </config-file>
+       
+           <uses-permission name="android.permission.INTERNET" />
+       
    
 
     <plugin name="cordova-plugin-whitelist"           source="npm" spec="~1.2.1" />
