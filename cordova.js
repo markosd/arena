@@ -18,6 +18,11 @@
  specific language governing permissions and limitations
  under the License.
 */
+
+document.addEventListener("offline", function(){ alert("You're offline") }, false);
+
+
+
 ;(function() {
 var PLATFORM_VERSION_BUILD_LABEL = '4.0.0';
 // file: src/scripts/require.js
