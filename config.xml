@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget id="org.coenraets.ionicdirectory" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0">
-
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.helloworld"
+        version   = "1.0.0">
     <name>Arena</name>
 
     <description>
@@ -21,9 +23,7 @@
     <!-- Customize your app and platform with the preference element. -->
     <preference name="DisallowOverscroll"         value="false" />
     <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
-<preference name="android-minSdkVersion" value="14"/>
-	<preference name="android-maxSdkVersion" value="24" />
-   <preference name="android-targetSdkVersion" value="24" />
+
     
     <!-- Define a specific version of PhoneGap to build into your app. -->
     <!-- <preference name="phonegap-version"       value="cli-6.0.0" /> -->
