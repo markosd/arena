@@ -44,7 +44,7 @@
 <preference name="disable-push-notifications" value="1" />
 
 <!-- Specifying CLI version for disabling push notifications -->
-<preference name="phonegap-version" value="cli-6.5.0" />
+<preference name="phonegap-version" value="cli-6.3.0" />
 
 <!-- To avoid the Apple Notifications warning -->
 <preference name="disable-push-notifications" value="1" />
