@@ -114,14 +114,14 @@
     -->
     <access origin="*" />
     
-       <access origin="http://www.mojemaslo.com/pancetta/test/*" />                    -
+       <access origin="http://play.google.com/store/apps/details?id=com.pancetta2.pancetta2.pancetta2/*" />                    -
  
 
     <!-- Added the following intents to support the removal of whitelist code from base cordova to a plugin -->
     <!-- Whitelist configuration. Refer to https://cordova.apache.org/docs/en/edge/guide_appdev_whitelist_index.md.html -->
 
-  <allow-navigation href="http://www.mojemaslo.com/pancetta/test/*" />
-    <allow-intent href="http://www.mojemaslo.com/pancetta/test/*" />
+  <allow-navigation href="http://play.google.com/store/apps/details?id=com.pancetta2.pancetta2.pancetta2/*" />
+    <allow-intent href="http://play.google.com/store/apps/details?id=com.pancetta2.pancetta2.pancetta2/*" />
     <allow-intent href="tel:*" />
     <allow-intent href="sms:*" />
     <allow-intent href="mailto:*" />
